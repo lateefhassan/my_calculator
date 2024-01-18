@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    
+    <div class="container">
+     <div class="display">
+        <input type="text" class="display1"  id="inputext" placeholder="0" disabled>
+     </div>
+
+     <div>
+        <button data-value="C" onclick="clr()">C</button>
+        <button data-value="DE "onclick="del()">DE</button>
+        <button data-value="%" onclick="calculate('%')">%</button>
+        <button data-value="/" onclick="calculate('/')">/</button>
+     </div>
+
+     <div>
+       <button data-value="7" onclick="calculate('7')">7</button>
+       <button data-value="9" onclick="calculate('9')">9</button>
+       <button data-value="8" onclick="calculate('8')">8</button>
+       <button data-value="*" onclick="calculate('*')">*</button>
+     </div>
+
+     <div>
+        <button data-value="4" onclick="calculate('4')">4</button>
+        <button data-value="5" onclick="calculate('5')">5</button>
+        <button data-value="6" onclick="calculate('6')">6</button>
+        <button data-value="-" onclick="calculate('-')">-</button>
+       
+     </div>
+
+
+     <div>
+        <button data-value="1" onclick="calculate('1')">1</button>
+        <button data-value="2" onclick="calculate('2')">2</button>
+        <button data-value="3" onclick="calculate('3')">3</button>
+        <button data-value="+" onclick="calculate('+')">+</button>
+       
+     </div>
+
+     <div>
+       <button data-value="00 "onclick="calculate('00')">00</button>
+       <button data-value="0" onclick="calculate('0')">0</button>
+       <button data-value="." onclick="calculate('.')">.</button>
+       <button data-value="=" onclick="Result()">=</button>
+        
+     </div>
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
